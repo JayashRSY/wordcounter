@@ -1,7 +1,7 @@
 
 window.onload = function() 
 {
-    alert("Hi, there! \nJust copy and paste text into text box or type text into it yourself to see the program display the number of words inputted. Thanks. ;)\n\n- Jayash");
+    alert("Hi, there!\nJust copy and paste text into text box or type text into it yourself to see the program display the number of words inputted. Thanks. ;)\n- Jayash");
     
     var $ = document.getElementById.bind(document);
     
@@ -27,26 +27,23 @@ window.onload = function()
         {    
             if (string[strlen-1] != " " && count == 0)
             {
-                $("result").innerHTML = "User inputting "+
-                    "word..."
+                $("result").innerHTML = "Typing... ";
             }
             else if (string[strlen-1] != " " && count >= 1)
             {
                 count++;
-                $("result").innerHTML = "User inputted "+
-                    "\"" + count + "\" word(s) in text "+
-                    "box.";
+                $("result").innerHTML = "Total Words : " 
+                    + count ;
             } 
             else if (string[strlen-1] == " " && count >= 1)
             {
-                $("result").innerHTML = "User inputted \"" 
-                    + count + "\" word(s) in text box.";
+                $("result").innerHTML = "Total Words : " 
+                    + count ;
             }
         }
         else
         {
-            $("result").innerHTML = "User inputted no "+
-                "texts yet. Text box blank.";
+            $("result").innerHTML = "Text Box Empty ! ";
         }
         $("result").style.display = "block";
     };
@@ -54,6 +51,5 @@ window.onload = function()
     $("string").oninput = countWords;
     $("string").onfocus = countWords;
 };
-
 
 
