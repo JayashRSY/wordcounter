@@ -39,12 +39,12 @@
                 margin: 12px auto 15px auto;
                 padding: 9px;
                 border: 2px solid white;
-                background: rgba(214, 153, 214, 1);
-                color: purple ;
+                background: rgba(0, 255, 255);
+                color: black ;
                 border-radius: 3px;
                 font-size: 160%;
                 font-weight: normal;
-                font-family: Damion;
+                font-family: Copperplate-Gothic;
             }
             
             #string
