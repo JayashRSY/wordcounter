@@ -1,8 +1,8 @@
 
 window.onload = function() 
 {
-    alert("Hi, there!\nJust copy and paste text into text box or type text into it yourself to see the program display the number of words inputted. Thanks. ;)\n- Jayash");
-    
+   */ alert("Hi, there!\nJust copy and paste text into text box or type text into it yourself to see the program display the number of words inputted. Thanks. ;)\n- Jayash");
+    */
     var $ = document.getElementById.bind(document);
     
     countWords = function()
